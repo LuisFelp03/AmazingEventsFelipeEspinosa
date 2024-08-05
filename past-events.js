@@ -24,18 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('cards'); // Contenedor de tarjetas
     const noResultsMessage = document.getElementById('no-results-message'); // Contenedor del mensaje de no resultados    
 
-    // Función para filtrar y mostrar las tarjetas de eventos
-    function handleFilterEvents() {
-        const searchTerm = normalizarTexto(searchInput.value); // Obtiene el término de búsqueda normalizado
-        const selectedCategories = Array.from(categoryCheckboxes) // Convierte los checkboxes en un array
-            .filter(checkbox => checkbox.checked) // Mantiene solo los checkboxes que están seleccionados
-            .map(checkbox => checkbox.name); // Obtiene el nombre de la categoría
-
-        const filteredEvents = filterEvents(events, searchTerm, selectedCategories, currentDate, true, false); // Mostrar eventos pasados
-
-        // Muestra los eventos filtrados en la página
-        showCards(filteredEvents, container, noResultsMessage);
-    }
 
     // Añade los eventos de escucha para los cambios en el campo de búsqueda y en los checkboxes de categorías
     searchInput.addEventListener('input', handleFilterEvents);
@@ -50,3 +38,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Obtiene los eventos de la API cuando se carga la página
     fetchEvents();
 });
+
+function handleFilterEvents() {
+    const searchInput = document.querySelector('.search-bar input'); // Campo de búsqueda
+    const categoryCheckboxes = document.querySelectorAll('.categories input[type="checkbox"]'); // Checkboxes de categorías
+    const container = document.getElementById('cards'); // Contenedor de tarjetas
+    const noResultsMessage = document.getElementById('no-results-message'); // Contenedor del mensaje de no resultados 
+
+    const searchTerm = normalizarTexto(searchInput.value); // Obtiene el término de búsqueda normalizado
+    const selectedCategories = Array.from(categoryCheckboxes) // Convierte los checkboxes en un array
+        .filter(checkbox => checkbox.checked) // Mantiene solo los checkboxes que están seleccionados
+        .map(checkbox => checkbox.name); // Obtiene el nombre de la categoría
+
+    const filteredEvents = filterEvents(events, searchTerm, selectedCategories, currentDate, true, false); // Mostrar eventos pasados
+
+    // Muestra los eventos filtrados en la página
+    showCards(filteredEvents, container, noResultsMessage);
+}
