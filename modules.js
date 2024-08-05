@@ -55,19 +55,3 @@ export function filterEvents(events, searchTerm, selectedCategories, currentDate
 
     return filteredEvents;
 }
-// export function filterEvents(events, searchTerm, selectedCategories, currentDate) {
-//     // Filtra los eventos por categorías
-//     let filteredEvents = events;
-//     if (selectedCategories.length > 0) {
-//         filteredEvents = filteredEvents.filter(event => selectedCategories.includes(event.category));
-//     }
-
-//     // Filtrar por búsqueda
-//     if (searchTerm) {
-//         filteredEvents = filteredEvents.filter(event =>
-//             normalizarTexto(event.name).includes(searchTerm)
-//         );
-//     }
-
-//     return filteredEvents;
-// }
