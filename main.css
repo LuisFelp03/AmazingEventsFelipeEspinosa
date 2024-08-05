@@ -1,0 +1,120 @@
+.container-fluid {
+    justify-content: space-around;
+}
+
+
+.navbar-brand {
+    padding: 5px 10px;
+}
+
+.nav-item {
+    margin-left: 40px;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+
+main {
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.carousel-inner {
+    font-size: 40px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    /* Cambia el color de las flechas a negro */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+}
+
+.categories label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+.stats-table thead th {
+    background-color: #ccc;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.stats-table th,
+.stats-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    align-items: center;
+    height: 120px;
+}
+
+.card {
+    width: 18rem;
+    height: 25rem;
+}
+
+#no-results-message {
+    text-align: center;
+    /* Centra el texto dentro del div */
+    margin: 20px 0;
+    /* Espaciado superior e inferior */
+    font-size: 18px;
+    /* Tamaño de fuente del mensaje */
+    color: #333;
+    /* Color del texto del mensaje */
+}
+
+#carta {
+    max-width: 600px;
+    margin: auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}

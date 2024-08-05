@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STATS</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="./Recursos_Amazing_Events_Task_1/favicon.png">
+
+
+</head>
+
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand d-flex justify-content-between align-items-center" href="">
+
+                <img src="./Recursos_Amazing_Events_Task_1/amazing_brand.png" style="width: 10rem;" alt="amazing_brand">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll d-flex flex-wrap">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="upcoming_events.html">UPCOMING EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="past_evets.html">PAST EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="stats.html#">STATS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class=" mt-0">
+
+        <div class="row justify-content-center mt-0">
+            <div class="col-12 col-md-8">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active text-center">
+                            <a href="./index.html" class="btn btn-primary">HOME</a>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <a href="./upcoming_events.html" class="btn btn-primary">UPCOMING EVENTS</a>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <a href="./past_evets.html" class="btn btn-primary">PAST EVENTS</a>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <a href="./contact.html" class="btn btn-primary">CONTACT US</a>
+                        </div>
+                        <div class="carousel-item text-center">
+                            <a href="./stats.html" class="btn btn-primary">STATS</a>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="table-content p-3">
+            <table class="table table-bordered table-hover" id="table-1">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="3">
+                            Events Statistics
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">
+                            Events with highest % of assistance
+                        </th>
+                        <th scope="col">
+                            Events with lowest % of assistance
+                        </th>
+                        <th scope="col">
+                            Events with larger % capacity
+                        </th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="3">
+                            Past events Statistics by category
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">Categories</th>
+                        <th scope="col">Revenues</th>
+                        <th scope="col">Percentage of assistance</th>
+                    </tr>
+                </tbody>
+                <tbody id="table-3">
+                </tbody>
+            </table>
+
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="3">
+                            Upcoming events statistics by category
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="col">Categories</th>
+                        <th scope="col">Revenues</th>
+                        <th scope="col">Percentage of estimate</th>
+                    </tr>
+                </tbody>
+                <tbody id="table-2">
+
+                </tbody>
+            </table>
+        </div>
+</body>
+
+
+</main>
+
+<footer class="bg-dark text-white d-flex w-100 align-items-center py-3">
+    <div class="container-fluid w-50 d-flex justify-content-start">
+        <button class="btn border-0 p-0 me-2"><img src="./Recursos_Amazing_Events_Task_1/facebook.png"
+                alt="Facebook"></button>
+        <button class="btn border-0 p-0 me-2"><img src="./Recursos_Amazing_Events_Task_1/instagram.png"
+                alt="Instagram"></button>
+        <button class="btn border-0 p-0"><img src="./Recursos_Amazing_Events_Task_1/whatsapp.png"
+                alt="Whatsapp"></button>
+    </div>
+    <div class="container-fluid w-25 text-end">
+        COHORT
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="stats.js"></script>
+</body>
+
+</html>
