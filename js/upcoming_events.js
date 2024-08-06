@@ -1,4 +1,4 @@
-import { normalizarTexto, showCards, filterEvents } from './modules.js';
+import { normalizarTexto, showCards, filterEvents } from '../modules/modules.js';
 
 // Espera a que todo el contenido de la página se haya cargado antes de ejecutar el código
 document.addEventListener('DOMContentLoaded', () => {

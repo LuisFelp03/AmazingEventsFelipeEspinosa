@@ -1,4 +1,4 @@
-import { normalizarTexto, showCards, filterEvents } from './modules.js';
+import { normalizarTexto, showCards, filterEvents } from '../modules/modules.js';
 
 // Variable para almacenar los eventos obtenidos de la API
 let events = [];

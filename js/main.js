@@ -1,4 +1,4 @@
-import { normalizarTexto, showCards, filterEvents } from './modules.js';
+import { normalizarTexto, showCards, filterEvents } from '../modules/modules.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.querySelector('.search-bar input');
